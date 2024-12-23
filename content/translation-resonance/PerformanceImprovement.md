@@ -1,5 +1,6 @@
 ---
-title: Resoniteのパフォーマンス改善に関するアップデートの展望
+title: 1. Resoniteのパフォーマンス改善に関するアップデートの展望
+date: 2024-12-23
 ---
 
 [https://www.youtube.com/watch?v=9cx2-VtL_LM](https://www.youtube.com/watch?v=9cx2-VtL_LM) のまとめ・解説もどき

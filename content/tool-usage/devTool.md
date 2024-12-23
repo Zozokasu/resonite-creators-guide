@@ -3,6 +3,7 @@ title: Dev Toolのつかいかた
 tags:
     - チュートリアル
     - ツール
+date: 2024-11-08
 ---
 ![devtool](https://assets.resonite.com/e724431adad561a99a9cd4b75c0fea4904e496a814204781b3ef7aa6e4bdb472)
 

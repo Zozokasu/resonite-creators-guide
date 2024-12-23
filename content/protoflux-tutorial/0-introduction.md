@@ -1,6 +1,7 @@
 ---
 title: はじめに
 description: Protoflux チュートリアルのまえがきです
+date: 2024-11-08
 ---
 ![Protoflux](../image/Protoflux_Logo_Color.svg)
 *Protofluxのロゴ*

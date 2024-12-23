@@ -3,6 +3,7 @@ title: 非ResonitePackageアバターの導入
 tags:
     - アバター
     - チュートリアル
+date: 2024-11-08
 ---
 ResonitePackageでない、fbx・unitypackage形式で配布されているアバターのアップロード方法を説明します。
 

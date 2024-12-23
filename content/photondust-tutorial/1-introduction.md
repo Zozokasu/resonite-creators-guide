@@ -1,5 +1,6 @@
 ---
 title: 4.1. はじめに - Photon Dust
+date: 2024-11-08
 ---
 ## Resonite 独自のパーティクルシステム Photon Dust
 **Photon Dust**とは、Resoniteで使われるパーティクルシステムです。  
