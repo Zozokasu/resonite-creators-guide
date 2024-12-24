@@ -1,6 +1,8 @@
 ---
 title: 1. Resoniteのパフォーマンス改善に関するアップデートの展望
 date: 2024-12-23
+tags:
+  - Resonance
 ---
 
 [https://www.youtube.com/watch?v=9cx2-VtL_LM](https://www.youtube.com/watch?v=9cx2-VtL_LM) のまとめ・解説もどき
@@ -14,7 +16,7 @@ date: 2024-12-23
 （前提として、Resoniteではインスペクターを開いたり、ギズモを掴んで動かしたり、コンポーネントをアタッチしたり、かなりUnityで見たことあるような操作ができますが、これはUnityの機能を使ったものではありません。全てFrooxEngine上で動いており、つまりUnityとは別のプログラムによって動いています。）
 
 ただし、「密に結びついている」と言いましたが、いまのUnityとFrooxEngineの関係は「すごく近い」というより「Unityの中でFrooxEngineを動かしている」と言うべきものになっています。
-![](../image/perfom-impr-FrxInUnity.webp)
+![](../image/translation-resonance/perfom-impr-FrxInUnity.webp)
 *現在のResoniteのアーキテクチャを簡単に示した図*
 
 上の図では「PART(パーティクル)」「AUDIO」がFrooxEngineとUnityにまたがり、「その他こまごまとしたもの」が個別にUnityとデータのやり取りをしている状態を示しています。
@@ -42,7 +44,7 @@ Unityの中にMonoのランタイムがあり、その中でResoniteは動いて
 ### FrooxEngineのUnityからの独立と.NET9への移行
 今、Resoniteが目指しているアプリの構造は下のようになっているみたいです。
 
-![](../image/perform-impr-FrxInUnity2.webp)
+![](../image/translation-resonance/perform-impr-FrxInUnity2.webp)
 
 上図の意味は
 - パーティクルとオーディオの処理を完全にFrooxEngineの内部で行う（おおきい四角形）
@@ -55,7 +57,7 @@ FrooxEngineとレンダラーの通信はプロセス間通信を使うようで
 
 
 そして、上の図にすることを達成できれば、FrooxEngineを完全にUnityの外に出せるようにもなります。（Frooxiusさんができるって言ってた）
-![](../image/perform-impr-FrxOutUnity.webp)
+![](../image/translation-resonance/perform-impr-FrxOutUnity.webp)
 
 Unityの外に出ることができれば、例えばランタイムも、Monoより新しい.NET 9に変えることができます。現在、ヘッドレスクライアントが.NET9になっていますが（ヘッドレスは描画とかがなく、Unity関連のしがらみがないため早期に.NETに移行できた）、パフォーマンスにとてつもない恩恵を得られます。
 
@@ -78,7 +80,7 @@ Resoniteとしては将来的に、UnityとFrooxEngineを独立させた上で�
 
 ことが挙げられています。
 
-![a](../image/perform-impr-UnityToSauce.webp)
+![a](../image/translation-resonance/perform-impr-UnityToSauce.webp)
 *将来的にはレンダラーをUnityからBevyエンジンベースのSauceに切り替える予定*
 Sauceの詳細: https://wiki.resonite.com/Sauce
 > **Sauce**（**Sourceではない** ）はResoniteが独自に開発している（厳密にはResoniteやYellowDogManStudiosとは別のチームが開発しているが）レンダリングエンジンです。
@@ -102,7 +104,7 @@ Resoniteは将来的により安定性を高めるために、システムのサ
 - レンダラーにエラーが発生・クラッシュしても一時的に何も見えなくなるだけで、自動的にレンダラーを再起動・復帰するようにする
   ような機能の実装が挙げられています。
 
-![](../image/perform-impr-sandboxing.webp)
+![](../image/translation-resonance/perform-impr-sandboxing.webp)
 *ユーザーが直接触る部分（ワールド等）をSandbox（子供が遊ぶ"砂場"の意味）化する構想。クラッシュする可能性のある部分をメインのプログラムから隔離する。*
 
 上図ではResoniteのアプリ全体を
