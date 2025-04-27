@@ -17,7 +17,7 @@ const config: QuartzConfig = {
       tagId: "G-43GQ59T1BP",
     },
     locale: "ja-JP",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "resonite-creation-guide.zozoka.su",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
