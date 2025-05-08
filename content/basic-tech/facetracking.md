@@ -34,4 +34,6 @@ SteamLinkがResoniteに表情データを送ってくれるように設定する
 ### デスクトップモードでのフェイストラッキング
 https://github.com/Ruzeh3D/NeosWCFaceTrack/wiki/Installation
 
-NeosVR（事実上のResoniteの前身）のmodですが、動くらしい？よくわかりません。
+フェイストラッキング情報をWebSocket経由でResoniteに送信するソフトと、Resonite側の受信用アイテムのセットです。
+
+NeosVR用のツールとなっていますがResoniteでも動くはずです。適宜Resoniteのものに読み替えてセットアップしてください。
