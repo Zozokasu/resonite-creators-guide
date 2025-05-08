@@ -5,7 +5,7 @@ tags:
 date: 2025-04-27
 ---
 
-## 顔トラッキングをする
+## フェイストラッキングをする
 ### Vive Pro Eye・Vive Facial Tracker
 - デフォルトで対応しています。基本的に特別な設定は必要ありません。
 
@@ -30,3 +30,8 @@ SteamLinkがResoniteに表情データを送ってくれるように設定する
         - [前提mod（ResoniteModLoader）](https://github.com/resonite-modding-group/ResoniteModLoader)が必要です
 
 ここを読んでる人は結構な玄人だと思うので詳しい説明は省きます。
+
+### デスクトップモードでのフェイストラッキング
+https://github.com/Ruzeh3D/NeosWCFaceTrack/wiki/Installation
+
+NeosVR（事実上のResoniteの前身）のmodですが、動くらしい？よくわかりません。
